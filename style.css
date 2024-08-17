@@ -4,35 +4,71 @@
   box-sizing: border-box;
 }
 
+.page-container {
+  background: #ddd;
+}
+
 .page {
-  width: 900px;
+  width: 1200px;
+  height: calc(100vh - 150px - 200px);
   margin: 0 auto;
+
+  min-height: 300px;
+
+  overflow: hidden;
+
+  /* border: solid 1px red; */
 }
 
 .menu {
-  height: 100px;
-  background-color: #B2D6FF;
+  height: 150px;
+  background-color: #0c41aa;
 }
 
-.sidebar {
+  .menu-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
 
-  width: 200px;
+  .menu .column {
+    width: 25%;
+    height: 115px;
+
+    margin-top: 20px;
+
+    float: left;
+
+    border: solid 1px red;
+  }
+
+    .menu .column.search-bar {
+      width: 50%;
+    }
+
+.sidebar {
+  width: 270px;
+  height: 300px;
+
   float: left;
 
-  height: 300px;
-  background-color: #F09A9D;
+  background-color: #fff;
 }
 
 .content {
+  width: 900px;
 
-  width: 600px;
   float: left;
+  margin-left: 30px;
 
   height: 500px;
-  background-color: #F5CF8E;
+  background-color: #fff;
 }
 
 .footer {
+
+  /* clear: both; */
+  /* funciona somente quando o rodapé está dentro do elemento pai */
+
   height: 200px;
-  background-color: #D6E9FE;
+  background-color: #f10e34;
 }
